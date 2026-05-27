@@ -30,6 +30,18 @@ The app follows strict Clean Architecture principles separated into:
 - **Data Layer** (`data`): Repositories, Local DB, and Remote APIs.
 - **AI Layer** (`ai`): Gemini-specific services and prompt handling.
 
+## 🌳 Git Workflow
+
+Untuk menjaga kualitas kode, proyek ini menggunakan alur *branching* berikut:
+1. **`dev`**: Semua fitur baru dan eksperimen di-*commit* dan di-*push* ke sini.
+2. **`staging`**: Tempat penggabungan fitur dari `dev` untuk dilakukan *testing* (Pra-Rilis).
+3. **`main`**: *Branch* rilis stabil (Production). Kode di sini harus 100% siap digunakan.
+
+**Alur Kerja (Developer):**
+- Lakukan perubahan selalu di *branch* `dev`.
+- Buat *Pull Request* (PR) dari `dev` ke `staging` untuk diuji.
+- Jika lolos uji, buat *Pull Request* dari `staging` ke `main` untuk dirilis.
+
 ## 📱 Getting Started
 
 1. Clone this repository:
